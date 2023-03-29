@@ -39,6 +39,14 @@
     #define __TERMINAL_COLOR_MODE_ENABLED 1
 #endif
 
+#if __APPLE__
+    #define __TERMINAL_COLOR_MODE_ENABLED 1
+#endif
+
+#if __OSX__
+    #define __TERMINAL_COLOR_MODE_ENABLED 1
+#endif
+
 #if WINDOWS_MANUAL_COLOR_ENABLE
     #define __TERMINAL_COLOR_MODE_ENABLED 1
 #endif
